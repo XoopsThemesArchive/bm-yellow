@@ -1,0 +1,311 @@
+/* Base Styles */
+
+/* This controls the default settings on a page */
+body { color: #663; background-color: #fff; margin: 0; padding: 0; border: solid 3px #fc0 }
+
+/* The default settings for ALL tables on a site, unless explicity defined for a particular table */
+table { margin: 0px; padding: 0px; width: 100% }
+table td { font-size: 11px; line-height: 14px; font-family: '¥Ò¥é¥®¥Î´Ý¥´ Pro W4', '¥Ò¥é¥®¥Î³Ñ¥´ Pro W3', Osaka, 'MS P ¥´¥·¥Ã¥¯', 'MS ¥´¥·¥Ã¥¯', Verdana, Arial, Helvetica, sans-serif; vertical-align: top; padding: 0px; border: 0px }
+
+/* This controls the default link settings & link mouseover/hover settings */
+a:link { color: #c90; text-decoration: none }
+a:visited { color: #c90; text-decoration: none }
+a:hover { color: #fc3; text-decoration: none }
+a:active { color: #fc3; text-decoration: none }
+
+/* Controls HTML tags for headings #1-5, unordered list and items in the list */
+h1 {}
+h2 {}
+h3 {}
+h4 {}
+h5 {}
+li { color: #663; font-size: 10px; line-height: 14px; list-style-position: outside; margin-left: 15px }
+ul { font-size: 10px; line-height: 14px; text-align: left; list-style-position: outside; margin: 2px; padding: 2px }
+li.non { list-style-type: none }
+
+/* Selector for a form button */
+input.formButton { color: #333; font-size: 11px; background-color: #fff; margin: 1px; border: solid 1px #fc0 }
+
+
+
+/* News */
+
+/* The following appear to primarily apply to the NEWS stories, */
+/* though they may be found in other areas as well */
+
+/* 
+BEGIN NEWS SECTION DEALING PRIMARILY WITH NEWS 
+*/
+
+/* The border around news stories */
+.item { border: solid 1px #fc0 }
+
+/* The BG color for the cell for news story titles */
+.itemHead { color: #fff; background-color: #fc3; padding: 3px }
+
+/* The BG color for the area right under a news title (post by so-and-so) */
+.itemInfo { background-color: #ff9; text-align: right; padding: 3px }
+
+/* The text in the story title EXCEPT the colon between the topic and the title */
+.itemTitle a { color: #fff; font-variant: small-caps; background-color: transparent }
+
+/* The text "posted by" just preceding the posters name */
+.itemPoster { font-style: italic; font-size: 90% }
+
+/* The text On $date $time immediately after the posters name */
+.itemPostDate { font-style: italic; font-size: 90% }
+
+/* The xx # reads for a story, but NOT the parenthesis surrounding the total */
+.itemStats { font-style: italic; font-size: 90% }
+
+/* The text of the story itself */
+.itemBody { padding-left: 5px }
+
+/* XOOPS DEVELOPER HELP NEEDED - This seems to be the same as .itemBody above. What is the difference??? */
+.itemText { line-height: 1.5em; margin: 5px 0px }
+
+/* Makes the first letter in a story bold */
+.itemText:first-letter { font-size: 120% }
+
+/* The foooter of a new story (read more, etc.) */
+.itemFoot { text-align: right; padding: 3px; border: solid 1px #fc3 }
+
+/* The [edit | delete] section of a news footer */
+.itemAdminLink { font-size: 90% }
+
+/* The | xx# bytes more | section of the news footer */
+.itemPermaLink { font-size: 90% }
+
+/* 
+END SECTION DEALING PRIMARILY WITH NEWS
+ */
+
+
+
+/* Controls the settings for a table header */
+th { color: #fff; font-size: 12px; font-family: sans-serif; line-height: 14px; background-color: #fc6; text-align: center; padding: 2px; vertical-align: middle }
+
+
+
+/* Page Header */
+#header { margin: 0px; padding: 0px }
+td#headerlogo { color: #fff; font-size: 36px; padding: 0 5px 5px 0; vertical-align: bottom }
+
+/* The area at the top of the page where the logo and advertising banner are */
+td#headerbanner { text-align: right; padding: 0 0 5px 5px; vertical-align: bottom }
+
+/* The whitish-grey bar on the default install right underneath the top section/header */
+td#headerbar { background-image: url("imgs/hbar.gif"); text-align: right; padding: 0; vertical-align: middle; border-style: none none solid; border-width: 0 0 1px; border-color: #ddd }
+td#leftheaderbar { background-image: url("imgs/hbar.gif"); text-align: left; padding: 0 0 0 20px; vertical-align: middle; border-style: none none solid; border-width: 0 0 1px; border-color: #ddd }
+td#rightheaderbar { background-image: url("imgs/hbar.gif"); text-align: right; padding: 0; vertical-align: middle; border-style: none none solid; border-width: 0 0 1px; border-color: #ddd }
+
+
+
+/* 
+BEGIN SECTION DEALING WITH THE THREE COLUMNS 
+*/
+
+/* Left Blocks */
+/* controls the settings for blocks on the LEFT side of the page */
+td#leftcolumn { padding-right: 2px; width: 150px }
+
+/* controls the settings for the table headers on the left column */
+td#leftcolumn th { }
+
+/* controls the settings for the block titles on the left column */
+td#leftcolumn div.blockTitle { width: 140px }
+
+/* controls the settings for the blocks' content on the left column */
+td#leftcolumn div.blockContent { padding: 5px; width: 140px }
+
+
+/* Center Blocks */
+/* controls the settings for block in the CENTER section of the page */
+td#centercolumn { font-size: 11px; line-height: 16px }
+
+/* controls the settings for the table headers on the center column */
+td#centercolumn th { }
+
+
+/* Controls the settings for "center-aligned CENTER blocks" on the page */
+td#centerCcolumn { padding: 0px 3px 1px }
+
+/* The title for center center blocks */
+td#centerCcolumn legend.blockTitle { margin: 0; padding: 5px; border: 0 }
+
+/* The content for center center blocks */
+td#centerCcolumn div.blockContent { margin: 0; padding: 5px; border: solid 1px #ffc }
+
+
+/* Controls the settings for "left-aligned CENTER blocks" on the page */
+td#centerLcolumn { padding: 0px 3px 0px 0px; width: 50% }
+
+/* The title for left-aligned center blocks*/
+td#centerLcolumn legend.blockTitle { margin: 0; padding: 5px; border: 0 }
+
+/* The content for left-aligned center blocks */
+td#centerLcolumn div.blockContent { margin: 0; padding: 5px; border: solid 1px #ffc }
+
+
+/* Controls the settings for "right-aligned CENTER blocks on the page */
+td#centerRcolumn { padding: 0px 3px 0px 0px; width: 50% }
+
+/* The title for right-aligned center blocks */
+td#centerRcolumn legend.blockTitle { margin: 0; padding: 5px; border: 0 }
+
+/* The content area for left-aligned center blocks */
+td#centerRcolumn div.blockContent { margin: 0; padding: 5px; border: solid 1px #ffc }
+
+
+
+/* Controls everything defined as content. for example in news it controls: */
+/* The article text, posted by, date, time & number of reads Including the parenthesis */
+/* the [ | ] brackets around the admin edit section and also the disclaimer: "the comments are */
+/* owned by the poster. We aren't responsible for their content" on the bottom of a news comments page */
+/* also a ton of text on the forum page...probably a ton of stuff everywhere...be careful with this one */
+div#content { text-align: left; padding: 8px }
+
+
+
+/* Right Blocks */
+/* settings for blocks in teh RIGHT column on a page*/
+td#rightcolumn { padding-left: 2px; width: 140px }
+
+/* Controls the table headers for the right columns.*/
+td#rightcolumn th { }
+
+/* Controls the right column blocks' titles */
+td#rightcolumn div.blockTitle { width: 140px }
+
+/* Controls the right column blocks' content area */
+td#rightcolumn div.blockContent { padding: 5px; width: 140px }
+
+/* END SECTION DEALING WITH THREE COLUMNS */
+
+
+
+/* Page Footer */
+/* settings for the footerbar where the xoops copyright notice is */
+tr#footerbar { background-image: url(imgs/hbar.gif)}
+td#copyright { font-size: 9px; text-align: center; vertical-align: middle; height: 23px }
+
+
+
+/* Blocks Mainmenu */
+/* settings for the Main Menu */
+td#mainmenu a { margin: 1px; padding: 1px 1px 1px 10px; border: solid 1px #fff; width: 120px }
+
+/* What happens on a mouse hover on the main menu */
+td#mainmenu a:hover { border: solid 1px #b8860b }
+
+/* The top cell on the main menu (typically HOME). This way you can give the top cell a different border or */
+/* other appearance. Useful for drawing a box around the entire menu, for instance. */
+td#mainmenu a.menuTop { }
+
+/* The remaining entries in the main menu other than the top most defined one line above */
+td#mainmenu a.menuMain { }
+
+/* The settings for submenu items that open when u are in a particular module. For example */
+/* "Submit news" and "Archives" when you are on the news module */
+td#mainmenu a.menuSub { padding-left: 5px; width: 115px }
+
+
+
+/* Blocks Usermenu */
+/* settings for the User Menu */
+td#usermenu a { margin: 1px; padding: 1px 1px 1px 10px; border: solid 1px #fff; width: 120px }
+
+/* What happens on a mouse hover on the user menu */
+td#usermenu a:hover { border: solid 1px #b8860b }
+
+/* The top most entry on the user menu */
+td#usermenu a.menuTop { }
+
+/* The settings for when a user has a private message */
+td#usermenu a.highlight { background-color: #fcc }
+
+
+
+/* Styles used to draw homogeneous tables */
+/* Described in a seperate page in the xoops.org wiki */
+.outer { margin: 0px; padding: 0px; border: solid 1px #fc0 }
+.head { padding-top: 2px; padding-bottom: 2px; background-color: #ff9 }
+.even { padding: 2px; border: solid 1px #ff9 }
+.odd { padding: 2px; border: solid 1px #ff9 }
+.foot { text-align: center; padding: 2px; border: solid 1px #ff9 }
+tr.even td { padding: 2px }
+tr.odd td { padding: 2px }
+td.nw { white-space: nowrap }
+
+
+/* NOT INCLUDED IN DEFAULT */
+/* customization to add special color to forum title head. requires editing newbb_index.html template as well */
+.outerhead{}
+.outerhead a { }
+.outerhead a:hover{}
+
+
+
+/* NOT SURE Special system messages MAYBE */
+/* I leave the defaults */
+div.errorMsg { background-color: #fcc; text-align: center; padding: 10px; border-style: solid; border-width: 1px; border-color: #ddf #aaa #aaa #ddf }
+div.confirmMsg { background-color: #ddffdf; text-align: center; padding: 10px; border-style: solid; border-width: 1px; border-color: #ddf #aaa #aaa #ddf }
+div.resultMsg { background-color: #fffacd; text-align: center; padding: 10px; border-style: solid; border-width: 1px; border-color: #c0c0c0 #666 #666 #c0c0c0 }
+
+
+/* Settings for when you insert code in a forum post */
+div.xoopsCode { font-family: "Courier New", Courier, monospace; background-color: #f8f8ff; padding: 0px 6px 6px; border: inset 1px #000080 }
+/* Settings for when you quote during a forum post */
+div.xoopsQuote { font-family: "Courier New", Courier, monospace; background-color: #f8f8ff; padding: 0px 6px 6px; border: inset 1px #000080 }
+
+
+
+/* Styles for the commenting system */
+.comTitle { margin-bottom: 2px }
+.comText { padding: 2px }
+.comUserStat { font-size: 10px; background-color: #fff; margin: 2px; padding: 2px; border: solid 1px #c0c0c0 }
+.comUserStatCaption { }
+.comUserStatus { font-size: 10px; margin-top: 10px; margin-left: 2px }
+.comUserRank { margin: 2px }
+.comUserRankText { font-size: 10px }
+.comUserRankImg { border: 0px }
+.comUserName {}
+.comUserImg { margin: 2px }
+.comDate { font-style: italic; font-size: 10px }
+.comDateCaption { font-style: normal }
+
+
+
+/* Styles for the original */
+input { color: #333; font-size: 11px; background-color: #fff; margin: 1px; border: solid 1px #fc0 }
+input.w1 { margin: 1px; width: 130px }
+input.w2 { margin: 1px; width: 85px }
+input.w3 { margin: 1px; width: 75px }
+select { color: #333; font-size: 11px; background-color: #fff; margin: 1px; border: solid 1px #fc0 }
+textarea { color: #333; font-size: 11px; background-color: #fff; margin: 1px; border: solid 1px #fc0; width: 300px }
+
+img { border: 0px }
+
+fieldset { border: double 3px #fc3 }
+fieldset.blockcolor3 { border: solid 1px #fc3 }
+
+table.w { width: auto; margin-left: 2px; margin-right: 2px }
+table.blockcolor1 { background-color: #fc0; margin: 0px; padding: 0px; width: 100% }
+table.blockcolor2 { margin-left: 4px; width: 99%; border: solid 1px #fc0 }
+table.outer3 { padding: 5px; width: auto; border: double 4px #fffacd }
+table.outer4 { padding: 5px; border: solid 1px #fffacd; width: auto }
+
+
+
+/* Eigene Klassen - Download */
+
+.downdef { text-align: left; padding-left: 10px; border: dotted 1px #ff9 }
+.downbt { background-color: #ff9; text-align: center; padding: 2px }
+.downtime { font-size: 10px; text-align: center; padding: 3px; border: solid 1px #ff9 }
+.downtop { text-align: right; padding-right: 10px }
+
+
+
+/* Blocks */
+.blockTitle { color: #333; font-size: 11px; line-height: 14px; margin: 0; padding-top: 2px; padding-bottom: 2px; padding-left: 10px; vertical-align: middle; border-top: 1px solid #fc0; border-right: 1px solid #fc0; border-left: 1px solid #fc0 }
+.blockContent { border-style: double solid solid; border-width: 3px 1px 1px; border-color: #fc0 }
